@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Contact</title>
+  <style>
+    body{margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#333; line-height:1.6;}
+    header{background:#2c3e50; color:#fff; padding:20px 0;}
+    nav{width:90%; max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;}
+    nav h1{font-size:24px;}
+    nav ul{list-style:none; display:flex; gap:20px;}
+    nav ul li a{color:#fff; font-weight:bold; transition:0.3s;}
+    nav ul li a:hover{color:#1abc9c;}
+
+    .container{width:90%; max-width:900px; margin:40px auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+    
+    h2{color:#2c3e50; font-size:32px; margin-bottom:20px;}
+    .contact-info, .contact-form{margin-bottom:40px;}
+    
+    .contact-info p{margin-bottom:10px; font-size:16px;}
+    .contact-info a{color:#1abc9c;}
+    
+    form{display:flex; flex-direction:column; gap:15px;}
+    input, textarea{padding:12px; font-size:16px; border:1px solid #ccc; border-radius:6px; width:100%;}
+    button{padding:12px; font-size:16px; background:#1abc9c; border:none; border-radius:6px; cursor:pointer; color:#fff;}
+    button:hover{background:#16a085;}
+    
+    footer{background:#2c3e50; color:#fff; text-align:center; padding:20px 0; margin-top:40px;}
+  </style>
+</head>
+<body>
+  <!-- En-tête / Navigation -->
+  <header>
+    <nav>
+      <h1>NOEL Kerby</h1>
+      <ul>
+        <li><a href="aceuil.html">Accueil</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="about.html">A propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Informations personnelles -->
+    <section class="contact-info">
+      <h2>Contactez-moi</h2>
+      <p><strong>Nom :</strong> NOEL Kerby</p>
+      <p><strong>Titre :</strong> Chimiste</p>
+      <p><strong>Lieu de résidence :</strong> Port-au-Prince, Haïti</p>
+      <p><strong>Email :</strong> <a href="mailto:kerbynoel14@email.com">kerbynoel14@gmail.com</a></p>
+      <p><strong>Téléphone :</strong> +50931157676</p>
+      <p><strong>Réseaux sociaux :</strong> <a href="#">LinkedIn</a> | <a href="@kerbynol2">Twitter</a> | <a href="#">GitHub</a></p>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-form">
+      <h2>Envoyez-moi un message</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <input type="text" id="subject" placeholder="Sujet" required>
+        <textarea id="message" rows="6" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="responseMessage" style="color:green; margin-top:15px;"></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 NOEL Kerby - Tous droits réservés
+  </footer>
+
+  <!-- JavaScript pour validation simple -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const responseMessage = document.getElementById('responseMessage');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      // Récupération des valeurs
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if(name === '' || email === '' || subject === '' || message === ''){
+        responseMessage.style.color = 'red';
+        responseMessage.textContent = 'Veuillez remplir tous les champs.';
+        return;
+      }
+
+      // Simulation d'envoi
+      responseMessage.style.color = 'green';
+      responseMessage.textContent = 'Merci ' + name + '! Votre message a été envoyé avec succès.';
+
+      // Reset du formulaire
+      form.reset();
+    });
+  </script>
+</body>
+</html>

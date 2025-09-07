@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projets</title>
+  <style>
+    body{margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#333; line-height:1.6;}
+    header{background:#2c3e50; color:#fff; padding:20px 0;}
+    nav{width:90%; max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;}
+    nav h1{font-size:24px;}
+    nav ul{list-style:none; display:flex; gap:20px;}
+    nav ul li a{color:#fff; font-weight:bold; transition:0.3s;}
+    nav ul li a:hover{color:#1abc9c;}
+
+    .container{width:90%; max-width:1100px; margin:40px auto;}
+
+    h2{color:#2c3e50; font-size:32px; margin-bottom:20px;}
+    .projects{display:flex; flex-wrap:wrap; gap:20px;}
+    .project{flex:1 1 300px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+    .project img{width:100%; border-radius:6px; margin-bottom:10px;} /* Zone pour image projet */
+    .project p{margin-bottom:10px;}
+    .project a{color:#1abc9c; text-decoration:none;}
+    .project a:hover{text-decoration:underline;}
+
+    footer{background:#2c3e50; color:#fff; text-align:center; padding:20px 0; margin-top:40px;}
+  </style>
+</head>
+<body>
+  <!-- En-tête / Navigation -->
+  <header>
+    <nav>
+      <h1>NOEL Kerby</h1>
+      <ul>
+        <li><a href="aceuil.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="about.html">A propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Mes Projets</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="org.jpg" alt="Projet Chimie Organique">
+        <h3>Projet Chimie Organique</h3>
+        <p><strong>Objectif :</strong> Synthèse de molécules organiques complexes pour étude analytique.</p>
+        <p><strong>Méthodes :</strong> Réactions chimiques contrôlées, purification et analyse spectroscopique.</p>
+        <p><strong>Résultats :</strong> Obtention de composés purs et validation par spectroscopie NMR et UV-Vis.</p>
+      </div>
+
+      <div class="project">
+        <img src="env.jpg" alt="Projet Analyse Environnementale">
+        <h3>Analyse Environnementale</h3>
+        <p><strong>Objectif :</strong> Mesurer la présence de polluants dans l'eau et le sol.</p>
+        <p><strong>Méthodes :</strong> Échantillonnage, tests chimiques et analyse chromatographique.</p>
+        <p><strong>Résultats :</strong> Données analysées et recommandations environnementales élaborées.</p>
+      </div>
+
+      <div class="project">
+        <img src="phar.jpg" alt="Projet Recherche Pharmaceutique">
+        <h3>Recherche Pharmaceutique</h3>
+        <p><strong>Objectif :</strong> Étudier des molécules actives pour formulation pharmaceutique.</p>
+        <p><strong>Méthodes :</strong> Tests en laboratoire, suivi des protocoles expérimentaux stricts.</p>
+        <p><strong>Résultats :</strong> Rapport détaillé et recommandations pour les prochaines étapes de formulation.</p>
+      </div>
+
+      <!-- Ajoute ici de nouveaux projets en copiant le bloc ci-dessus -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 NOEL Kerby - Tous droits réservés
+  </footer>
+</body>
+</html>

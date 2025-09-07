@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Accueil</title>
+  <style>
+    /* --- Styles généraux --- */
+    *{margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body{background:#f5f5f5; color:#333; line-height:1.6;}
+    a{text-decoration:none; color:inherit;}
+
+    /* --- En-tête / Navigation --- */
+    header{background:#2c3e50; color:#fff; padding:20px 0;}
+    nav{width:90%; max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;}
+    nav h1{font-size:24px;}
+    nav ul{list-style:none; display:flex; gap:20px;}
+    nav ul li a{color:#fff; font-weight:bold; transition:0.3s;}
+    nav ul li a:hover{color:#1abc9c;}
+
+    /* --- Section Accueil --- */
+    .hero{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:60px 20px; background:#34495e; color:#fff;}
+    .hero-text{flex:1 1 400px; max-width:600px; padding:20px;}
+    .hero-text h2{font-size:36px; margin-bottom:20px;}
+    .hero-text p{font-size:18px; margin-bottom:20px;}
+    .hero-text button{padding:12px 24px; font-size:16px; background:#1abc9c; border:none; border-radius:6px; cursor:pointer; color:#fff;}
+    .hero-photo{flex:1 1 300px; max-width:300px; text-align:center; padding:20px;}
+    .hero-photo img{width:100%; border-radius:50%; border:4px solid #1abc9c;}
+
+    /* --- Pied de page --- */
+    footer{background:#2c3e50; color:#fff; text-align:center; padding:20px 0; margin-top:40px;}
+  </style>
+</head>
+<body>
+  <!-- En-tête / Navigation -->
+  <header>
+    <nav>
+      <h1>NOEL Kerby</h1>
+      <ul>
+        <li><a href="aceuil.html">Accueil</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="about.html">A propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Bonjour, je suis NOEL Kerby</h2>
+      <p>Chimiste passionné par la recherche scientifique et l'innovation en chimie.</p>
+      <button>Voir mes projets</button>
+    </div>
+    <div class="hero-photo">
+      <!-- Ajoute ici ta photo personnelle -->
+      <img src="ker.jpg" alt="Photo de NOEL Kerby">
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    &copy; 2025 NOEL Kerby - Tous droits réservés
+  </footer>
+</body>
+</html>
